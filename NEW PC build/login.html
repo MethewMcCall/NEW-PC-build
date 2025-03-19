@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Builder - Login/Register</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">PC Builder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="auth-container">
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <input type="text" id="login-email" placeholder="Email or User ID" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-btn">Login</button>
+            <p>New user? <a href="#" id="show-register">Register here</a></p>
+        </div>
+        
+        <div class="form-box hidden" id="register-box">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="User ID" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button id="register-btn">Register</button>
+            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </div>
+    </div>
+    
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

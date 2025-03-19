@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/checkout.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">PC Builder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    
+    <section class="checkout-container">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" required></textarea>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required>
+            
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="gpay">Google Pay</option>
+                <option value="card">Card Payment</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            
+            <div id="payment-details"></div>
+            
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+    
+    <div id="qr-popup" class="hidden">
+        <img src="assets/images/gpay-qr.png" alt="Google Pay QR Code">
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>
